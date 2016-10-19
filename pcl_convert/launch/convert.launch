@@ -1,0 +1,8 @@
+<launch> 
+ <node name="pcl_convert" pkg="pcl_convert" type="pcl_convert" respawn="false" output="screen">
+  	<param name="point_cloud_topic" value="/hokuyo3d/hokuyo_cloud" />
+  	<param name="output_file" value="$(find pcl_convert)/out/output_file.txt" />
+	<param name="need_time" value="4.0" />
+  </node>
+
+</launch>

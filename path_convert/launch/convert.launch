@@ -1,0 +1,9 @@
+<launch> 
+ <node name="path_convert" pkg="path_convert" type="path_convert" respawn="false" output="screen">
+  	<param name="path_topic" value="/trajectory" />
+        <param name="odom_topic" value="/odom" />
+  	<param name="output_file_path" value="$(find path_convert)/out/output_file_path.txt" />
+        <param name="output_file_odom" value="$(find path_convert)/out/output_file_odom.txt" />
+  </node>
+
+</launch>
