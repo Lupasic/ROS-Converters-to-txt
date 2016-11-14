@@ -1,0 +1,7 @@
+<launch> 
+ <node name="pose_stamped_convert" pkg="pose_stamped_convert" type="pose_stamped_convert" respawn="false" output="screen">
+  	<param name="pose_topic" value="/lsd_slam/pose" />
+  	<param name="output_file_pose" value="$(find pose_stamped_convert)/out/output_file_pose.txt" />
+  </node>
+
+</launch>
